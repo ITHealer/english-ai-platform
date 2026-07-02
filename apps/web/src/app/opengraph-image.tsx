@@ -16,8 +16,8 @@ export default function OpenGraphImage() {
           display: "flex",
           position: "relative",
           overflow: "hidden",
-          background: "linear-gradient(135deg, #f8fafc 0%, #eef2ff 62%, #fef3c7 100%)",
-          color: "#0f172a",
+          background: "linear-gradient(135deg, #fffdf8 0%, #faf3e6 65%, #f5e9dc 100%)",
+          color: "#1f2430",
           padding: "72px 82px",
           fontFamily: "Arial, sans-serif",
         }}
@@ -28,7 +28,7 @@ export default function OpenGraphImage() {
             width: 380,
             height: 380,
             borderRadius: 999,
-            background: "rgba(45, 58, 140, 0.08)",
+            background: "rgba(201, 161, 90, 0.16)",
             right: -70,
             top: -100,
           }}
@@ -44,8 +44,8 @@ export default function OpenGraphImage() {
                 alignItems: "center",
                 justifyContent: "center",
                 background: "white",
-                border: "2px solid #e2e8f0",
-                color: "#2d3a8c",
+                border: "2px solid #e4d7c2",
+                color: "#16213e",
                 fontSize: 20,
                 fontWeight: 800,
                 padding: "0 24px",
@@ -55,18 +55,18 @@ export default function OpenGraphImage() {
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <span style={{ fontSize: 28, fontWeight: 800 }}>{siteConfig.name} (Lucy)</span>
-              <span style={{ marginTop: 5, fontSize: 18, color: "#475569" }}>{siteConfig.role}</span>
+              <span style={{ marginTop: 5, fontSize: 18, color: "#6b7280" }}>{siteConfig.role}</span>
             </div>
           </div>
           <div style={{ display: "flex", maxWidth: 960, fontSize: 64, lineHeight: 1.08, fontWeight: 800, letterSpacing: -2 }}>
-            Personalized English learning that unlocks your potential.
+            Cá nhân hoá lộ trình · Nâng tầm chất lượng
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 20, color: "#2d3a8c", fontWeight: 700 }}>
-            English education
-            <span style={{ color: "#f59e0b" }}>•</span>
-            Personalized learning
-            <span style={{ color: "#f59e0b" }}>•</span>
-            Practical EdTech
+          <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 20, color: "#16213e", fontWeight: 700 }}>
+            IELTS 8.0
+            <span style={{ color: "#c9a15a" }}>•</span>
+            6 năm kinh nghiệm
+            <span style={{ color: "#c9a15a" }}>•</span>
+            Lộ trình cá nhân hoá
           </div>
         </div>
       </div>

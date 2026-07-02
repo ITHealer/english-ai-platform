@@ -1,18 +1,18 @@
-const defaultUrl = "https://your-project.vercel.app";
+const defaultUrl = "https://english-with-lucy.vercel.app";
 
 export const siteConfig = {
   name: "Nguyễn Mộng Hoà",
   englishName: "Lucy",
   brandName: "English with Lucy",
-  role: "IELTS Teacher & English Educator",
+  role: "Giảng viên IELTS & Giáo viên tiếng Anh",
   description:
-    "Nguyễn Mộng Hoà (Lucy) is an IELTS teacher with 6 years of experience in personalized IELTS, general English, and academic English instruction.",
+    "Nguyễn Mộng Hoà (Lucy) là giảng viên IELTS với 6 năm kinh nghiệm, cung cấp lộ trình IELTS và tiếng Anh được cá nhân hoá theo mục tiêu của từng học viên.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? defaultUrl,
-  locale: "en_US",
-  availableFor: "Personalized IELTS & English learning",
+  locale: "vi_VN",
   links: {
-    email: "lucy.english@example.com",
-    github: "",
-    linkedin: "",
+    email: "monghoams21@gmail.com",
+    facebook: "https://www.facebook.com/mowopeace",
+    phone: "096 635 7172",
+    zalo: "https://zalo.me/0966357172",
   },
 } as const;

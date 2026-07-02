@@ -4,25 +4,18 @@ import { cn } from "@/lib/utils";
 
 type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
-  variant?: "primary" | "secondary" | "light";
+  variant?: "primary" | "secondary" | "gold" | "light";
 };
 
-export function Button({
-  children,
-  className,
-  variant = "primary",
-  ...props
-}: ButtonProps) {
+export function Button({ children, className, variant = "primary", ...props }: ButtonProps) {
   return (
     <a
       className={cn(
-        "inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600",
-        variant === "primary" &&
-          "bg-brand-600 text-white shadow-sm hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md",
-        variant === "secondary" &&
-          "border-2 border-brand-600 bg-white text-brand-600 hover:bg-brand-50",
-        variant === "light" &&
-          "bg-amber-400 text-slate-950 shadow-sm hover:-translate-y-0.5 hover:bg-amber-300",
+        "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+        variant === "primary" && "bg-primary text-white hover:-translate-y-0.5 hover:bg-primary-dark",
+        variant === "secondary" && "border-2 border-primary bg-transparent text-primary hover:bg-primary-soft",
+        variant === "gold" && "bg-accent text-primary hover:-translate-y-0.5 hover:bg-accent-light",
+        variant === "light" && "bg-white text-primary hover:-translate-y-0.5 hover:bg-primary-soft",
         className,
       )}
       {...props}
@@ -31,4 +24,3 @@ export function Button({
     </a>
   );
 }
-

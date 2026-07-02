@@ -1,47 +1,40 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 
 import { siteConfig } from "@/config/site";
 
 import "./globals.css";
 
-const displayFont = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+const displayFont = Cormorant_Garamond({
+  subsets: ["latin", "vietnamese"],
+  weight: ["500", "600", "700"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
 const bodyFont = Inter({
-  subsets: ["latin"],
+  subsets: ["latin", "vietnamese"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-const monoFont = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: `${siteConfig.name} | ${siteConfig.role}`,
+  title: `${siteConfig.name} (Lucy) | ${siteConfig.role}`,
   description: siteConfig.description,
   keywords: [
     "Nguyễn Mộng Hoà",
     "Lucy IELTS Teacher",
-    "English Teacher",
-    "IELTS Instructor",
+    "giáo viên IELTS",
+    "luyện thi IELTS",
+    "tiếng Anh giao tiếp",
+    "English with Lucy",
     "IELTS Vietnam",
-    "TESOL Teacher",
-    "English Education",
-    "EdTech",
-    "Vietnam",
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   openGraph: {
-    title: `${siteConfig.name} | ${siteConfig.role}`,
+    title: `${siteConfig.name} (Lucy) | English with Lucy`,
     description: siteConfig.description,
     type: "website",
     locale: siteConfig.locale,
@@ -50,20 +43,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} (Lucy) | IELTS Teacher`,
+    title: `${siteConfig.name} (Lucy) | Giảng viên IELTS`,
     description: siteConfig.description,
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
-      className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable} antialiased`}
+      lang="vi"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+      className={`${displayFont.variable} ${bodyFont.variable}`}
     >
       <body>{children}</body>
     </html>

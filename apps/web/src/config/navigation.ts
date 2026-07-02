@@ -1,9 +1,8 @@
-export const navigation = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Method", href: "#method" },
-  { label: "Courses", href: "#courses" },
-  { label: "AI Tools", href: "#tools" },
-  { label: "Contact", href: "#contact" },
-] as const;
+import type { NavigationItem } from "@/types/profile";
 
+export const navigation = [
+  { id: "about", label: "Về Lucy" },
+  { id: "courses", label: "Khoá học" },
+  { id: "students", label: "Học viên" },
+  { id: "contact", label: "Liên hệ" },
+] satisfies NavigationItem[];

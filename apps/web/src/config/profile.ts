@@ -10,23 +10,23 @@ export const profileConfig = {
   credentials: [
     {
       emphasis: "Cử nhân Ngôn ngữ Anh",
-      detail: "— Trường Đại học Khoa học Xã hội và Nhân văn.",
+      detail: "- Trường Đại học Khoa học Xã hội và Nhân văn.",
     },
     {
       emphasis: "Chứng chỉ Giảng dạy tiếng Anh Quốc tế TESOL",
-      detail: "— xếp loại Giỏi.",
+      detail: "- xếp loại Giỏi.",
     },
     {
       emphasis: "Chứng chỉ Nghiệp vụ Sư phạm",
-      detail: "— xếp loại Giỏi.",
+      detail: "- xếp loại Giỏi.",
     },
     {
       emphasis: "IELTS 8.0/9.0",
-      detail: "— Listening 9.0, Reading 9.0, Writing Task 2 8.0.",
+      detail: "- Listening 9.0, Reading 9.0, Writing Task 2 8.0.",
     },
     {
       emphasis: "6 năm kinh nghiệm giảng dạy",
-      detail: "— IELTS, tiếng Anh giao tiếp và tiếng Anh học thuật.",
+      detail: "- IELTS, tiếng Anh giao tiếp và tiếng Anh học thuật.",
     },
   ],
   philosophy:

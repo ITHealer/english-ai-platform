@@ -53,7 +53,7 @@ export function AboutSection() {
               {profileConfig.philosophy}
             </p>
             <footer className="relative mt-4 pl-5 text-xs font-bold text-highlight">
-              — Triết lý giảng dạy của Lucy
+              - Triết lý giảng dạy của Lucy
             </footer>
           </blockquote>
         </div>

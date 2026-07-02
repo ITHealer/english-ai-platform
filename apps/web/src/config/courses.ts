@@ -4,7 +4,7 @@ export const coursesConfig = {
   eyebrow: "Khoá học",
   title: "Lộ trình học phù hợp với từng mục tiêu",
   description:
-    "Chọn hướng học phù hợp — củng cố tiếng Anh nền tảng hoặc luyện thi IELTS bài bản theo từng giai đoạn.",
+    "Chọn hướng học phù hợp - củng cố tiếng Anh nền tảng hoặc luyện thi IELTS bài bản theo từng giai đoạn.",
   general: {
     slug: "tieng-anh-nen-tang",
     title: "Tiếng Anh Tổng Quát",

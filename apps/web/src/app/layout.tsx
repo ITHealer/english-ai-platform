@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} (Lucy) | Giảng viên IELTS`,
+    title: `${siteConfig.name} (Lucy) | Giáo viên`,
     description: siteConfig.description,
   },
   robots: { index: true, follow: true },

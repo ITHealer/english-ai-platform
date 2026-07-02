@@ -3,8 +3,8 @@ import type { ProfileConfig } from "@/types/profile";
 export const profileConfig = {
   name: "Nguyễn Mộng Hoà",
   englishName: "Lucy",
-  eyebrow: "Giảng viên IELTS · English with Lucy",
-  role: "Cử nhân Ngôn ngữ Anh · IELTS Teacher",
+  eyebrow: "Giáo viên · English with Lucy",
+  role: "",
   badge: "IELTS 8.0 · 6 năm kinh nghiệm",
   photo: "/images/lucy-profile-v2.png",
   credentials: [
